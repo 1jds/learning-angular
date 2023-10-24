@@ -1,0 +1,21 @@
+<div class="task">
+  <h3>
+    {{ task?.text }}
+    <fa-icon [ngStyle]="{ color: 'red' }" [icon]="faTimes"></fa-icon>
+  </h3>
+  <p>{{ task?.day }}</p>
+</div>
+
+<!-- Here I've changed this...
+<div class="task">
+  <h3>{{ task.text }}</h3>
+  <p>{{ task.day }}</p>
+</div>
+
+To this...
+<div class="task">
+  <h3>{{ task?.text }}</h3>
+  <p>{{ task?.day }}</p>
+</div>
+
+To avoid the error message "TS2532: Object is possibly 'undefined'." -->
